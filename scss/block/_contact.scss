@@ -1,5 +1,6 @@
 .contact {
-    background: url(/image/contact/1.png) 0% 0% / auto no-repeat, url(/image/contact/2.png) 100% 40% / auto no-repeat;
+    background: url(../image/contact/1.png) 0% 0% / auto no-repeat,
+        url(../image/contact/2.png) 100% 40% / auto no-repeat;
     padding: 60px 0;
     &__top {
         @extend %flex-row;
@@ -49,7 +50,7 @@
         @include font-style(18px, 25px, 400, $text-color);
         margin-bottom: 20px;
         &::before {
-            content: url(/icons/contact/Vector.svg);
+            content: url(../icons/contact/Vector.svg);
             position: absolute;
             top: -5px;
             left: 0;
