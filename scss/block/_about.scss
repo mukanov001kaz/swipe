@@ -1,6 +1,5 @@
 .about {
-    background: url(../../image/about/1.png) 0% 0% / auto no-repeat,
-        url(../../image/about/2.png) 78% 100% / auto no-repeat;
+    background: url(/image/about/1.png) 0% 0% / auto no-repeat, url(/image/about/2.png) 78% 100% / auto no-repeat;
     padding: 50px 0;
     &__top {
         @extend %flex-row;
@@ -137,7 +136,6 @@
         align-items: center;
     }
     @media (max-width: 576px) {
-        background: url(../../image/about/1.png) 0% 0% / 70% no-repeat,
-            url(../../image/about/2.png) 78% 100% / 70% no-repeat;
+        background: url(/image/about/1.png) 0% 0% / 70% no-repeat, url(/image/about/2.png) 78% 100% / 70% no-repeat;
     }
 }

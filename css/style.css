@@ -475,13 +475,13 @@ html {
   border: 1px solid rgb(251, 251, 255);
   border-radius: 10px;
   box-shadow: 0px 4px 20px 0px rgba(193, 193, 193, 0.3);
-  background: url(../../image/features/1.png) -1% 7%/auto 60% no-repeat, url(../../image/features/2.png) 50% 120%/auto 60% no-repeat, url(../../image/features/3.png) 102% 0%/auto 60% no-repeat rgba(255, 255, 255, 0.6);
+  background: url(/image/features/1.png) -1% 7%/auto 60% no-repeat, url(/image/features/2.png) 50% 120%/auto 60% no-repeat, url(/image/features/3.png) 102% 0%/auto 60% no-repeat rgba(255, 255, 255, 0.6);
   filter: drop-shadow(0 4px 20px rgba(193, 193, 193, 0.3));
   padding: 50px 0;
 }
 @media (max-width: 992px) {
   .features__bottom {
-    background: url(../../image/features/1.png) 50% 0%/auto 20% no-repeat, url(../../image/features/2.png) 50% 50%/auto 20% no-repeat, url(../../image/features/3.png) 50% 100%/auto 20% no-repeat rgba(255, 255, 255, 0.6);
+    background: url(/image/features/1.png) 50% 0%/auto 20% no-repeat, url(/image/features/2.png) 50% 50%/auto 20% no-repeat, url(/image/features/3.png) 50% 100%/auto 20% no-repeat rgba(255, 255, 255, 0.6);
     flex-direction: column;
     row-gap: 40px;
   }
@@ -696,7 +696,7 @@ html {
 }
 
 .price {
-  background: url(../../image/price/1.png) 0% -16%/auto no-repeat, url(../../image/price/2.png) 100% 100%/auto no-repeat;
+  background: url(/image/price/1.png) 0% -16%/auto no-repeat, url(/image/price/2.png) 100% 100%/auto no-repeat;
   padding-bottom: clamp(30px, 10px + 6.25vw, 100px);
 }
 .price__container {
@@ -812,7 +812,7 @@ html {
 }
 @media (max-width: 576px) {
   .price {
-    background: url(../../image/price/1.png) 50% 20%/80% auto no-repeat, url(../../image/price/2.png) 50% 80%/80% auto no-repeat;
+    background: url(/image/price/1.png) 50% 20%/80% auto no-repeat, url(/image/price/2.png) 50% 80%/80% auto no-repeat;
   }
 }
 
@@ -947,7 +947,7 @@ html {
 }
 
 .questions {
-  background: url(../../image/questions/1.png) 100% 0%/50% no-repeat;
+  background: url(/image/questions/1.png) 100% 0%/50% no-repeat;
 }
 .questions__title {
   font-size: clamp(30px, 18.5714285714px + 3.5714285714vw, 70px);
@@ -971,7 +971,7 @@ html {
   padding: 40px 0 48px 90px;
 }
 .questions__list-item::before {
-  content: url(../../icons/questions/Vector.svg);
+  content: url("/icons/questions/Vector.svg");
   position: absolute;
   top: 43px;
   left: 0;
@@ -981,7 +981,7 @@ html {
 }
 
 .about {
-  background: url(../../image/about/1.png) 0% 0%/auto no-repeat, url(../../image/about/2.png) 78% 100%/auto no-repeat;
+  background: url(/image/about/1.png) 0% 0%/auto no-repeat, url(/image/about/2.png) 78% 100%/auto no-repeat;
   padding: 50px 0;
 }
 .about__top {
@@ -1124,7 +1124,7 @@ html {
 }
 @media (max-width: 576px) {
   .about {
-    background: url(../../image/about/1.png) 0% 0%/70% no-repeat, url(../../image/about/2.png) 78% 100%/70% no-repeat;
+    background: url(/image/about/1.png) 0% 0%/70% no-repeat, url(/image/about/2.png) 78% 100%/70% no-repeat;
   }
 }
 
@@ -1223,7 +1223,7 @@ html {
 }
 
 .contact {
-  background: url(../../image/contact/1.png) 0% 0%/auto no-repeat, url(../../image/contact/2.png) 100% 40%/auto no-repeat;
+  background: url(/image/contact/1.png) 0% 0%/auto no-repeat, url(/image/contact/2.png) 100% 40%/auto no-repeat;
   padding: 60px 0;
 }
 .contact__top {
@@ -1282,7 +1282,7 @@ html {
   margin-bottom: 20px;
 }
 .contact__container-text::before {
-  content: url(../../icons/contact/Vector.svg);
+  content: url(/icons/contact/Vector.svg);
   position: absolute;
   top: -5px;
   left: 0;
@@ -1292,7 +1292,7 @@ html {
 }
 @media (max-width: 768px) {
   .contact {
-    background: url(../../image/contact/1.png) 50% 0%/80% no-repeat, url(../../image/contact/2.png) 50% 60%/80% no-repeat;
+    background: url(/image/contact/1.png) 50% 0%/80% no-repeat, url(/image/contact/2.png) 50% 60%/80% no-repeat;
   }
 }
 
@@ -1421,7 +1421,7 @@ html {
 
 .footer {
   padding: 85px 0 64px clamp(15px, 2.1428571429px + 4.0178571429vw, 60px);
-  background: url(../../image/footer/IMAGE.png) 100% 0%/contain no-repeat #1a1930;
+  background: url(/image/footer/IMAGE.png) 100% 0%/contain no-repeat #1a1930;
 }
 .footer__container {
   display: flex;
@@ -1469,7 +1469,7 @@ html {
   color: #6259ea;
 }
 .footer__map-flag::after {
-  content: url(../../image/footer/🇺🇦.png);
+  content: url(/image/footer/🇺🇦.png);
   position: absolute;
   top: 0;
   right: 163px;
@@ -1517,6 +1517,6 @@ html {
 }
 @media (max-width: 768px) {
   .footer {
-    background: url(../../image/footer/IMAGE.png) 50% 50%/60% no-repeat #1a1930;
+    background: url(/image/footer/IMAGE.png) 50% 50%/60% no-repeat #1a1930;
   }
 }

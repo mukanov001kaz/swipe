@@ -1,6 +1,6 @@
 .footer {
     padding: 85px 0 64px adaptiveSize(15, 60);
-    background: url(../../image/footer/IMAGE.png) 100% 0% / contain no-repeat #1a1930;
+    background: url(/image/footer/IMAGE.png) 100% 0% / contain no-repeat #1a1930;
 
     &__container {
         display: flex;
@@ -37,7 +37,7 @@
             color: #6259ea;
         }
         &::after {
-            content: url(../../image/footer/🇺🇦.png);
+            content: url(/image/footer/🇺🇦.png);
             position: absolute;
             top: 0;
             right: 163px;
@@ -79,6 +79,6 @@
         }
     }
     @media (max-width: 768px) {
-        background: url(../../image/footer/IMAGE.png) 50% 50% / 60% no-repeat #1a1930;
+        background: url(/image/footer/IMAGE.png) 50% 50% / 60% no-repeat #1a1930;
     }
 }
