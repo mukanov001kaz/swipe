@@ -1,0 +1,30 @@
+.questions {
+    background: url(../../image/questions/1.png) 100% 0% / 50% no-repeat;
+    &__title {
+        @include font-style(adaptiveSize(30, 70), adaptiveSize(40, 70), 400, $text-color);
+        margin-bottom: adaptiveSize(30, 80);
+        @media (max-width: 576px) {
+            text-align: center;
+        }
+    }
+
+    &__list {
+    }
+
+    &__list-item {
+        position: relative;
+        @include font-style(adaptiveSize(18, 44), adaptiveSize(18, 49), 400, $text-color);
+        border-bottom: 2px solid #e7e5ff;
+        padding: 40px 0 48px 90px;
+        &::before {
+            content: url(../../icons/questions/Vector.svg);
+            position: absolute;
+            top: 43px;
+            left: 0;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.advantages {
+    padding: adaptiveSize(30, 100) 0 adaptiveSize(30, 200) 0;
+    &__top {
+        @extend %flex-row;
+        column-gap: adaptiveSize(10, 77, 769);
+        margin: 0 0 adaptiveSize(30, 80) adaptiveSize(15, 70, 769);
+    }
+
+    &__title {
+        @include font-style(adaptiveSize(23, 44), adaptiveSize(27, 49), 400, $text-color);
+    }
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        background-color: #e7e5ff;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__video {
+        aspect-ratio: 16/9;
+        video {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

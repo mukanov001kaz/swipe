@@ -1,0 +1,26 @@
+@use "sass:math";
+%flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin font-style($fz, $lh, $fw, $color) {
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+    color: $color;
+}
+
+@function adaptiveSize($minSize, $maxSize, $minWidth: 320, $maxWidth: 1440) {
+    $c: $maxSize - $minSize;
+    $d: $maxWidth - $minWidth;
+    $change: math.div($c, $d);
+    $a: #{$maxSize - $maxWidth * $change};
+    $b: #{100 * $change};
+    @return clamp(#{$minSize}px, (#{$a}px + #{$b}vw), #{$maxSize}px);
+}

@@ -1,0 +1,59 @@
+.no-need {
+    padding-bottom: adaptiveSize(30, 51);
+    &__top {
+        @extend %flex-row;
+        column-gap: adaptiveSize(10, 77, 769);
+        margin: 0 0 adaptiveSize(25, 50) adaptiveSize(15, 60, 769);
+    }
+
+    &__title {
+        @include font-style(adaptiveSize(30, 44), adaptiveSize(27, 49), 400, $text-color);
+    }
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        background-color: #e7e5ff;
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        @extend %flex-row;
+        column-gap: adaptiveSize(10, 80);
+        @media (max-width: 992px) {
+            flex-direction: column;
+            padding-left: 20px;
+        }
+    }
+
+    &__image {
+        width: adaptiveSize(300, 533);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media (max-width: 576px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__content-box {
+        padding-right: adaptiveSize(15, 60);
+    }
+
+    &__content-title {
+        @include font-style(adaptiveSize(26, 35), adaptiveSize(26, 38), 400, $text-color);
+        margin-bottom: adaptiveSize(20, 53);
+    }
+
+    &__content-text {
+        @include font-style(adaptiveSize(14, 18), 25px, 400, $text-color);
+        margin-bottom: 20px;
+        &:nth-last-child(2) {
+            margin-bottom: adaptiveSize(20, 51);
+        }
+    }
+}

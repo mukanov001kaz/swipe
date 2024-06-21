@@ -1,0 +1,113 @@
+.contact {
+    background: url(../../image/contact/1.png) 0% 0% / auto no-repeat,
+        url(../../image/contact/2.png) 100% 40% / auto no-repeat;
+    padding: 60px 0;
+    &__top {
+        @extend %flex-row;
+        column-gap: adaptiveSize(10, 77, 769);
+        margin: 0 0 adaptiveSize(25, 50) adaptiveSize(15, 60, 769);
+    }
+
+    &__title {
+        @include font-style(adaptiveSize(30, 70), adaptiveSize(27, 49), 400, $text-color);
+        white-space: nowrap;
+    }
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        background-color: #e7e5ff;
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__container-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: adaptiveSize(300, 459);
+        & > span {
+            color: #abaabb;
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__container-text {
+        position: relative;
+        padding-left: 17px;
+        @include font-style(18px, 25px, 400, $text-color);
+        margin-bottom: 20px;
+        &::before {
+            content: url(../../icons/contact/Vector.svg);
+            position: absolute;
+            top: -5px;
+            left: 0;
+        }
+    }
+
+    &__container-right {
+        width: adaptiveSize(300, 640);
+    }
+    @media (max-width: 768px) {
+        background: url(../../image/contact/1.png) 50% 0% / 80% no-repeat,
+            url(../../image/contact/2.png) 50% 60% / 80% no-repeat;
+    }
+}
+
+.form {
+    &__label {
+        @include font-style(18px, 25px, 400, $text-color);
+        margin-bottom: 11px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 55px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 20px 0px rgba(193, 193, 193, 0.3);
+        filter: drop-shadow(0 4px 20px rgba(193, 193, 193, 0.3));
+        margin-bottom: 18px;
+        @include font-style(18px, 25px, 400, #c1c1c1);
+        padding-left: 32px;
+    }
+
+    &__massage {
+        height: 100px;
+        padding-top: 21px;
+        margin-bottom: 50px;
+    }
+    &__name {
+    }
+
+    &__email {
+    }
+
+    &__text {
+    }
+
+    &__button {
+        width: 100%;
+        height: 60px;
+        background-color: $button-color;
+        text-align: center;
+        border-radius: 5px;
+        @include font-style(18px, 60px, 700, $white-color);
+    }
+
+    :is(&__name, &__email, &__text) {
+        display: flex;
+        flex-direction: column;
+    }
+}

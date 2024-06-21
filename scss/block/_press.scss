@@ -1,0 +1,79 @@
+.press {
+    padding: 60px 0;
+    &__top {
+        @extend %flex-row;
+        margin-bottom: 40px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    &__title {
+        @include font-style(adaptiveSize(40, 70), adaptiveSize(40, 70), 400, $text-color);
+    }
+
+    &__link {
+        display: block;
+        width: 157px;
+        height: 60px;
+        background-color: $button-color;
+        text-align: center;
+        border-radius: 5px;
+        @include font-style(16px, 60px, 400, $white-color);
+        @media (max-width: 768px) {
+            width: 80%;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        &::-webkit-scrollbar {
+            scrollbar-width: none;
+        }
+        @media (max-width: 576px) {
+            column-gap: 10px;
+        }
+    }
+
+    &__card {
+        width: adaptiveSize(300, 548);
+        border-right: 2px solid #e7e5ff;
+        padding: 0 adaptiveSize(10, 64);
+        scroll-snap-align: start;
+        &:first-child {
+            padding-left: 0;
+        }
+        @media (max-width: 576px) {
+            border-right: none;
+        }
+    }
+
+    &__card-image {
+        width: adaptiveSize(300, 418);
+        height: 314px;
+        margin-bottom: 30px;
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__card-link {
+        display: block;
+        width: 150px;
+        height: 30px;
+        background-color: #e7e5ff;
+        text-align: center;
+        @include font-style(15px, 30px, 400, $text-color);
+        margin-bottom: 16px;
+    }
+
+    &__card-text {
+        @include font-style(adaptiveSize(16, 35), adaptiveSize(20, 42), 400, $title-color);
+        margin-bottom: 38px;
+    }
+}

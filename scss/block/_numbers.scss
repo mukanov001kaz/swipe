@@ -1,0 +1,114 @@
+.numbers {
+    padding: adaptiveSize(30, 100) 0px 50px adaptiveSize(20, 75);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #e7e5ff;
+        .slide-left {
+            animation: slide-left 2s linear 0.5s both;
+            view-timeline-name: --image;
+            animation-timeline: --image;
+            animation-range: 10% 35%;
+        }
+        @media (max-width: 1200px) {
+            column-gap: 20px;
+        }
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+    &__left {
+        position: relative;
+        .numbers__year,
+        .numbers__title {
+            position: relative;
+            z-index: 1;
+        }
+        @media (max-width: 1200px) {
+            flex-shrink: 0;
+        }
+        @media (max-width: 768px) {
+            z-index: -1;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: adaptiveSize(-10, -215);
+        left: adaptiveSize(0, -145);
+        max-width: 582px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__year {
+        @include font-style(17px, 25px, 400, $text-color);
+    }
+
+    &__title {
+        @include font-style(adaptiveSize(36, 70), adaptiveSize(40, 77), 400, $text-color);
+        @media (max-width: 768px) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__right {
+        .slide-right {
+            animation: slide-right 2s linear both;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            view-timeline-name: --imag;
+            animation-timeline: --imag;
+            animation-range: 10% 35%;
+            &:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(2) {
+                animation-delay: 0.6s;
+            }
+            &:nth-child(3) {
+                animation-delay: 0.7s;
+            }
+        }
+    }
+
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        column-gap: adaptiveSize(20, 140, 769);
+        border-top: 2px solid #e7e5ff;
+        padding: 28px 70px 30px 0;
+        @media (max-width: 768px) {
+            align-items: center;
+        }
+        @media (max-width: 576px) {
+            padding: 28px 15px 30px 0;
+        }
+    }
+
+    &__description-block {
+        position: relative;
+        z-index: 10;
+        max-width: 383px;
+    }
+
+    &__subtitle {
+        @include font-style(adaptiveSize(21, 30), adaptiveSize(21, 42), 400, $text-color);
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        @include font-style(adaptiveSize(14, 18), adaptiveSize(16, 25), 400, $text-color);
+    }
+
+    &__quantity {
+        position: relative;
+        z-index: 10;
+        max-width: 224px;
+        text-align: right;
+        @include font-style(adaptiveSize(28, 80), adaptiveSize(28, 112), 400, $text-color);
+    }
+}

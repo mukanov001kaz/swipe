@@ -1,0 +1,84 @@
+.footer {
+    padding: 85px 0 64px adaptiveSize(15, 60);
+    background: url(../../image/footer/IMAGE.png) 100% 0% / contain no-repeat #1a1930;
+
+    &__container {
+        display: flex;
+        column-gap: adaptiveSize(60, 197, 769);
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__map {
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 576px) {
+            text-align: center;
+        }
+    }
+
+    &__map-country {
+        @include font-style(adaptiveSize(14, 18), 25px, 400, $white-color);
+        margin-bottom: 7px;
+    }
+
+    &__map-email {
+        @include font-style(adaptiveSize(14, 18), 25px, 400, $white-color);
+        margin-bottom: 13px;
+    }
+
+    &__map-flag {
+        position: relative;
+        margin-bottom: adaptiveSize(40, 88);
+        @include font-style(adaptiveSize(14, 18), 25px, 400, $white-color);
+        & > span {
+            color: #6259ea;
+        }
+        &::after {
+            content: url(../../image/footer/🇺🇦.png);
+            position: absolute;
+            top: 0;
+            right: 163px;
+        }
+    }
+
+    &__map-reserved {
+        @include font-style(18px, 25px, 400, $white-color);
+        & > span {
+            color: #6259ea;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        column-gap: adaptiveSize(40, 100, 769);
+        border-top: 1px solid #e7e5ff;
+        border-bottom: 1px solid #e7e5ff;
+        @media (max-width: 768px) {
+            padding: 30px 0;
+            justify-content: center;
+            column-gap: 100px;
+        }
+        @media (max-width: 576px) {
+            flex-direction: column;
+            row-gap: 30px;
+        }
+    }
+
+    &__menu-list {
+    }
+
+    &__menu-item {
+        @include font-style(18px, 25px, 400, $white-color);
+        margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 768px) {
+        background: url(../../image/footer/IMAGE.png) 50% 50% / 60% no-repeat #1a1930;
+    }
+}

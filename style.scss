@@ -1,0 +1,59 @@
+@import "./scss/base/reset";
+@import "./scss/base/font";
+@import "./scss/base/vars";
+@import "./scss/base/mixins-extends";
+@import "./scss/base/keyframes";
+
+html {
+    font-family: $propmt;
+}
+.wrapper {
+    // overflow-x: hidden;
+}
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 15px;
+    // overflow: hidden;
+}
+.button-link {
+    display: inline-block;
+    background-color: $button-color;
+    font-family: $poppins;
+    text-align: center;
+    border-radius: 5px;
+    @include font-style(16px, 60px, 400, $white-color);
+}
+.more-link {
+    position: relative;
+    font-family: $poppins;
+    @include font-style(18px, 25px, 400, $title-color);
+    padding-left: 24px;
+    text-transform: uppercase;
+    &::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: $more-color;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@import "./scss/block/header";
+@import "./scss/block/swipe-slider";
+@import "./scss/block/numbers";
+@import "./scss/block/features";
+@import "./scss/block/advantages";
+@import "./scss/block/no-need";
+@import "./scss/block/reuse";
+@import "./scss/block/price";
+@import "./scss/block/team";
+@import "./scss/block/questions";
+@import "./scss/block/about";
+@import "./scss/block/press";
+@import "./scss/block/contact";
+@import "./scss/block/media";
+@import "./scss/block/footer";
