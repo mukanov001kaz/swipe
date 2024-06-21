@@ -1,5 +1,5 @@
 .price {
-    background: url(/image/price/1.png) 0% -16% / auto no-repeat, url(/image/price/2.png) 100% 100% / auto no-repeat;
+    background: url(../image/price/1.png) 0% -16% / auto no-repeat, url(../image/price/2.png) 100% 100% / auto no-repeat;
     padding-bottom: adaptiveSize(30, 100);
     &__container {
         container: box/inline-size;
@@ -74,7 +74,7 @@
         }
         padding-left: 41px;
         &::before {
-            content: url(../../icons/price/1.svg);
+            content: url(../icons/price/1.svg);
             position: absolute;
             top: 0;
             left: 0;
@@ -102,7 +102,7 @@
         }
     }
     @media (max-width: 576px) {
-        background: url(/image/price/1.png) 50% 20% / 80% auto no-repeat,
-            url(/image/price/2.png) 50% 80% / 80% auto no-repeat;
+        background: url(../image/price/1.png) 50% 20% / 80% auto no-repeat,
+            url(../image/price/2.png) 50% 80% / 80% auto no-repeat;
     }
 }

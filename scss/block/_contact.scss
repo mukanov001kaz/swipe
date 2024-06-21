@@ -60,7 +60,8 @@
         width: adaptiveSize(300, 640);
     }
     @media (max-width: 768px) {
-        background: url(/image/contact/1.png) 50% 0% / 80% no-repeat, url(/image/contact/2.png) 50% 60% / 80% no-repeat;
+        background: url(../image/contact/1.png) 50% 0% / 80% no-repeat,
+            url(../image/contact/2.png) 50% 60% / 80% no-repeat;
     }
 }
 
